@@ -9,6 +9,9 @@ spring:
     url: jdbc:mysql://127.0.0.1:23306/stock_example # port 23306 으로 설정함
     username: root
     password: 1234
+    hikari:
+      maximum-pool-size: 40
+      # 이 예제에서는 동일한 데이터소스에 대해 동작하게끔 구현하였으므로 커넥션 풀 사이즈를 늘려줌
 
 logging:
   level:
